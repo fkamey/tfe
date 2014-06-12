@@ -1,0 +1,614 @@
+.grid {
+	max-width: 1350px;
+	margin: 0 auto;
+	list-style: none;
+	text-align: center;
+	padding: 0;
+}
+
+
+.grid ul{
+	padding: 0;
+}
+
+.grid li {
+	width: 450px;
+	padding-top: 60px;
+	text-align: left;
+}
+
+.grid li:nth-child(even){
+	float: right;
+}
+
+.grid figure {
+	margin: 0;
+	position: relative;
+}
+
+.grid figure img {
+	max-width: 100%;
+	display: block;
+	position: relative;
+}
+
+.grid figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 20px;
+	background: #ee792c;
+	color: #fff;
+}
+
+.grid figcaption h3 {
+	margin: 0;
+	padding: 0;
+	line-height: 40px;
+	color: #fff;
+}
+
+.grid figcaption span:before {
+	content: 'par ';
+	line-height: 420px;
+}
+
+
+
+
+.decos {
+	width: 960px;
+	margin: 0 auto;
+	list-style: none;
+	text-align: center;
+	padding: 0;
+}
+
+
+.decos ul{
+	padding: 0;
+	margin-top: 100px;
+}
+
+.decos li {
+	width: 300px;
+	margin-right: 30px;
+	margin-bottom: 60px;
+	text-align: left;
+	float: left;
+}
+
+.decos li:nth-child(3n+3){
+	margin-right: 0;
+}
+
+.decos figure {
+	margin: 0;
+	position: relative;
+}
+
+.decos figure img {
+	width: 300px;
+	height: 225px;
+	display: block;
+	position: relative;
+}
+
+.decos figcaption {
+	position: absolute;
+	top: 200px;
+	left: 0;
+	width: 300px;
+	background: #ee792c;
+	color: #fff;
+	padding: 5px 0 5px 15px;
+	font-size: 15px;
+}
+
+.decos figcaption h3 {
+	margin: 0;
+	padding: 0;
+	line-height: 24px;
+	color: #fff;
+	font-size: 20px;
+}
+
+
+.decos figcaption .chez:before {
+	content: 'chez ';
+
+}
+
+
+.decos figcaption .prix {
+	text-align: center;
+	padding: 5px 5px 0 0;
+	display: inline-block;
+	color: #fff;
+	font-size: 15px;
+}
+
+
+
+/* Caption Style 4 */
+.cs-style-4 li {
+	-webkit-perspective: 1700px;
+	-moz-perspective: 1700px;
+	perspective: 1700px;
+	-webkit-perspective-origin: 0 50%;
+	-moz-perspective-origin: 0 50%;
+	perspective-origin: 0 50%;
+}
+
+.cs-style-4 figure {
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+.cs-style-4 figure > div {
+	overflow: hidden;
+}
+
+.cs-style-4 figure img {
+	-webkit-transition: -webkit-transform 0.4s;
+	-moz-transition: -moz-transform 0.4s;
+	transition: transform 0.4s;
+}
+
+.no-touch .cs-style-4 figure:hover img,
+.cs-style-4 figure.cs-hover img {
+	-webkit-transform: translateX(25%);
+	-moz-transform: translateX(25%);
+	-ms-transform: translateX(25%);
+	transform: translateX(25%);
+}
+
+.cs-style-4 figcaption {
+	height: 100%;
+	width: 50%;
+	opacity: 0;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform-origin: 0 0;
+	-moz-transform-origin: 0 0;
+	transform-origin: 0 0;
+	-webkit-transform: rotateY(-90deg);
+	-moz-transform: rotateY(-90deg);
+	transform: rotateY(-90deg);
+	-webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
+	-moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
+	transition: transform 0.4s, opacity 0.1s 0.3s;
+}
+
+.no-touch .cs-style-4 figure:hover figcaption,
+.cs-style-4 figure.cs-hover figcaption {
+	opacity: 1;
+	-webkit-transform: rotateY(0deg);
+	-moz-transform: rotateY(0deg);
+	transform: rotateY(0deg);
+	-webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
+	-moz-transition: -moz-transform 0.4s, opacity 0.1s;
+	transition: transform 0.4s, opacity 0.1s;
+}
+
+.cs-style-4 figcaption a {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+
+
+
+
+
+
+
+
+
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+body, html { font-size: 100%; padding: 0; margin: 0;}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+
+
+.grid cs-style-3{
+	float: inherit;
+	padding: 0;
+	height: 1400px;
+}
+
+
+
+
+
+
+.decos cs-style-3{
+	float: inherit;
+	padding: 0;
+	height: 1400px;
+}
+
+
+
+
+
+
+
+/* ----------------------------- slider recette ------------------------------------ */
+
+
+
+.cbp-contentslider {
+	width: 960px;
+	height: 100%;
+	margin: 1em auto;
+	position: relative;
+
+}
+
+.cbp-contentslider ul {
+	list-style: none;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	padding: 0;
+	margin-top: 50px;
+}
+
+
+
+.cbp-contentslider ul li:not(.ingredients){
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	padding: 1em;
+	background: #fff;
+}
+
+/* Whithout JS, we use :target */
+.cbp-contentslider ul li:target {
+	z-index: 100;
+}
+
+.cbp-contentslider nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 3.313em;
+	z-index: 1000;
+	border: 2px solid #5FB898;
+	overflow: hidden;
+}
+
+.cbp-contentslider nav a {
+	float: left;
+	display: block;
+	width: 33.333333333333336%;
+	height: 100%;
+	font-weight: 400;
+	letter-spacing: 0.1em;
+	overflow: hidden;
+	color: #5FB898;
+	background: #fff;
+	outline: none;
+	text-align: center;
+	line-height: 3;
+	position: relative;
+	text-transform: uppercase;
+	border-right: 2px solid #5FB898;
+	-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+	-moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+
+
+.cbp-contentslider nav a:last-child {
+	border: none;
+	box-shadow: 1px 0 #5FB898; /* fills gap caused by rounding */
+}
+
+.cbp-contentslider nav a:hover {
+	background-color: #5FB898;
+	color: #fff;
+}
+
+.cbp-contentslider nav a.rc-active {
+	background-color: #5FB898;
+	color: #fff;
+}
+
+
+.cbp-contentslider li div {
+	position: absolute;
+	top: 7em;
+	width: 100%;
+	left: 0;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+
+.cbp-contentslider p {
+	color: #333;
+	padding: 0 0.5em 0.4em;
+	margin: 0;
+	font-size: 1.2em;
+	font-weight: 300;
+	text-align: justify;
+	line-height: 1.6;
+}
+
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 1024px) {
+	
+.cbp-contentslider {
+	width: 768px;
+	margin: 0 auto;
+	margin-left: -50px;
+}	
+
+}
+
+
+@media screen and (max-width: 480px) {
+	.cbp-contentslider {
+	width: 320px;
+	margin: 0 auto;
+}	
+	
+
+}
+
+
+/* ----------------------------- checkbox ------------------------------------ */
+
+
+
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.ac-custom {
+
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.ac-custom h2 {
+	font-size: 25px;
+	font-weight: 300;
+	padding: 0 0 0.5em;
+	margin: 0 0 30px;
+	color: #5FB898;
+}
+
+.ac-custom ul,
+.ac-custom ol {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	width: 960px;
+}
+
+.ac-custom li {
+	margin: 0 auto;
+	padding: 15px 0;
+	position: relative;
+}
+
+.ac-custom label {
+	display: inline-block;
+	position: relative;
+	font-size: 20px;
+	padding: 0 0 0 40px;
+	vertical-align: top;
+	color: #333;
+	cursor: pointer;
+	-webkit-transition: color 0.3s;
+	transition: color 0.3s;
+}
+
+.ac-custom label:hover{
+	text-decoration: underline;
+}
+
+.ac-custom input[type="checkbox"],
+.ac-custom label::before {
+	width: 25px;
+	height: 25px;
+	left: 0;
+	margin-top: -2px;
+	margin-left: 3px;
+	position: absolute;
+	cursor: pointer;
+}
+
+.ac-custom input[type="checkbox"]{
+	opacity: 0;
+	-webkit-appearance: none;
+	display: inline-block;
+	vertical-align: middle;
+	z-index: 100;
+}
+
+.ac-custom label::before {
+	content: '';
+
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+}
+
+
+.ac-custom input[type="checkbox"]:checked + label{
+	color: rgba(0,0,0,0.2);
+} 
+
+.ac-custom input[type="checkbox"]:checked + label::before{
+	opacity: 0.8;
+}
+
+
+
+.ac-custom svg {
+
+	width: 25px;
+	height: 25px;
+	top: 50%;
+	margin-top: -20px;
+	left: 5px;
+	pointer-events: none;
+}
+
+.ac-custom svg path {
+	stroke: #5FB898;
+	stroke-width: 13px;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	fill: none;
+}
+
+
+
+
+
+.ac-list ol {
+	list-style: decimal;
+	list-style-position: inside;
+}
+
+.ac-list ol li {
+	font-size: 20px;
+	text-indent: -40px;
+	height: 40px;
+}
+
+
+
+.ac-list ol p{
+	padding-left: 60px;
+}
+
+
+.ac-list ol li label {
+	font-size: 20px;
+	text-indent: 0;
+	padding-left: 30px;
+}
+
+.ac-list label::before {
+	display: none;
+}
+
+.ac-list svg {
+	width: 100%;
+	height: 80px;
+	left: 0;
+
+}
+
+.ac-list svg path {
+	stroke-width: 4px;
+}
+
+
+@media screen and (max-width: 50em) {
+	section {
+		font-size: 80%;
+	}
+}
+
+
+.ingredients li{
+	position: relative;
+	display: block;
+	left: 0;
+}
+
+
+h2 .info{
+	font-size: 16px;
+	padding: 0;
+	margin: 0;
+	color: #2A2A2A;
+}
+
+
+
+@media only screen and (max-width: 1024px){
+	.grid {
+	width: 768px;
+	}
+
+	.grid li {
+		width: 350px;
+	}
+
+	.grid figcaption h3 {
+		line-height: 30px;
+		font-size: 20px;
+	}
+
+	.grid figcaption span:before {
+		line-height: 320px;
+		font-size: 10px;
+	}
+	.decos {
+		width: 630px;
+		margin: 0 auto;
+	}
+	.decos li:nth-child(3n+3){
+		margin-right: 30px;
+	}
+	.decos li:nth-child(2n+2){
+		margin-right: 0;
+	}
+
+
+
+}
+
+@media only screen and (max-width: 768px){
+
+	.grid {
+	width: 350px;
+	}
+
+	.grid li {
+		width: 350px;
+	}
+
+	.grid figcaption h3 {
+		line-height: 30px;
+		font-size: 20px;
+	}
+
+	.grid figcaption span:before {
+		line-height: 320px;
+		font-size: 10px;
+	}
+	.decos {
+		width: 300px;
+		margin: 0 auto;
+	}
+	.decos li:nth-child(1n+1){
+		margin-right: 30px;
+	}
+
+}
